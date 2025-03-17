@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ring Collections</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        .collection-container {
+            text-align: center;
+            padding: 20px;
+        }
+        .ring-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        .ring-item {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .ring-item img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .ring-item h3 {
+            margin-top: 10px;
+            font-size: 18px;
+            color: #b8860b;
+        }
+        .ring-item p {
+            margin: 5px 0;
+            font-size: 16px;
+        }
+        .ring-item .price {
+            font-weight: bold;
+            color: #d4af37;
+        }
+        .ring-item button {
+            margin-top: 10px;
+            padding: 10px;
+            background: gold;
+            border: none;
+            color: black;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .ring-item button:hover {
+            background: #b8860b;
+        }
+    </style>
+</head>
+<body>
+    <div class="collection-container">
+        <h2>Our Ring Collections</h2>
+        <p>Discover our exclusive range of beautifully crafted rings.</p>
+        <div class="ring-grid">
+            <div class="ring-item">
+                <img src="data:image/jpeg;base64,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" alt="Diamond Ring">
+                <h3>Elegant Diamond Ring</h3>
+                <p>Pure 18K Gold with a stunning diamond.</p>
+                <p class="price">₹50,000</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="ring-item">
+                <img src="https://th.bing.com/th?id=OIP.JTWT7XgPETc3IxCbgP6sRAHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&cb=15&dpr=1.3&pid=3.1&rm=2" alt="Ruby Ring">
+                <h3>Royal Ruby Ring</h3>
+                <p>Embedded with a rare ruby stone.</p>
+                <p class="price">₹35,000</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="ring-item">
+                <img src="https://th.bing.com/th/id/OIP.Fzdt9_RozttihNz0vCytNQHaIu?rs=1&pid=ImgDetMain" alt="Sapphire Ring">
+                <h3>Classic Sapphire Ring</h3>
+                <p>Perfect for a timeless elegant look.</p>
+                <p class="price">₹40,000</p>
+                <button>Buy Now</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

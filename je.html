@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jewellery Website Landing Page</title>
+    <link rel="stylesheet" href="je.css">
+</head>
+<script>
+
+
+$(function(){
+    //Smooth scroll
+    var $root = $('html, body');
+    $('a').click(function(){
+       $root.animate({
+          scrollTop: $($.attr(this, 'href')).offset().top
+       }, 800);
+      return false;
+    });
+
+   //Sticky navigation on scroll.
+      $(document).on('scroll', function(){
+        if($(this).scrollTop() > 185){
+            $('nav').addClass('nav-sticky');
+        }else{
+            $('nav').removeClass('nav-sticky');
+        }
+    });
+    //Add active class to the nav on click.
+    $('nav li a').click(function(){
+    $('nav li a').removeClass('active');
+    $(this).addClass('active');
+    });
+
+    $('nav li a').scroll(function(){
+    $('nav li a').removeClass('active');
+    $(this).addClass('active');
+    });
+
+});
+</script>
+<body>
+    <header id="home">
+        <div class="container">
+            <div class="brand">
+              <img src="https://vignette4.wikia.nocookie.net/joke-battles/images/4/41/Infinity_Logo_Gold.png/revision/latest?cb=20151230235753" style="width: 40px"/>
+              <p>Spark Golden Jewelry</p>
+            </div>
+         </div><!-- / container -->
+
+            <nav>
+              <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#custom-sec">Custom Jewelry</a></li>
+                <li><a href="#designer-sec">Designer Jewelry</a></li>
+                <li><a href="login.html">Sign Up</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="payment.html">Payment</a></li>
+              </ul>
+            </nav>
+
+          <div class="main-background">
+            <div class="container">
+              <div class="main-content">
+                <h1>Spark Golden Jewelry</h1>
+                <h2>24 Caratage Yellow Gold Bracelet</h2>
+                <p>Shope the latest designs from new brands</p>
+                <a href="#custom-sec">- View Products</a>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <section class="section" id="custom-sec">
+          <div class="container">
+            <div class="section-head">
+              <h2>Custom Jewelry</h2>
+              <p>Latest Design</p>
+            </div>
+
+            <div class="collection-list">
+              <ul>
+                <li><img src="http://www.thomassabo.com/dw/image/v2/AAQY_PRD/on/demandware.static/-/Sites-ts-master-catalog/default/dwbb260100/productimages/LBA0102-415-12.png?sw=310&sfrm=png" style="width: 180px"/>
+                  <div class="list-head">
+                    <h3><a href="ring.html">Bracelets</a></h3>
+                    <span>The description of the item.</span>
+                  </div>
+                </li>
+
+
+                <li><img src="https://s-media-cache-ak0.pinimg.com/originals/27/41/69/274169b4444ccf7448d4133c13dd05c1.png" style="width: 180px"/>
+                  <div class="list-head">
+                    <h3><a href="ring.html">Ring</a></h3>
+                    <span>The description of the item.</span>
+                  </div>
+                </li>
+
+
+                <li><img src="https://s-media-cache-ak0.pinimg.com/originals/c9/89/55/c98955bbb6331b4aa98cf33bdc84a84a.png" style="width: 180px"/>
+                  <div class="list-head">
+                    <h3><a href="ring.html">Earrings</a></h3>
+                    <span>The description of the item.</span>
+                  </div>
+               </li>
+
+                <li><img src="https://images.unsplash.com/photo-1588444837495-c6cfeb53f32d?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" style="width: 180px"/>
+                  <div class="list-head">
+                    <h3><a href="ring.html">Pendants</a></h3>
+                    <span>The description of the item.</span>
+                  </div>
+               </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="new-sec">
+          <div class="new-collection">
+
+              <div class="left"></div>
+
+              <div class="right"></div>
+
+                     
+                </div>
+              </div>
+          </div>
+      </section>
+        <section class="section designer-collection clearfix" id="designer-sec">
+          <div class="container">
+            <div class="section-head">
+                <h2>Designer JEWELRY</h2>
+                <p>Explore Design</p>
+            </div>
+
+            <div class="collection-list clearfix">
+              <ul>
+                <li><img src="https://cdn0.rubylane.com/shops/2heartsjewelry/TRI369.1L.jpg" style="width: 180px"/>
+                  <div class="list-head">
+                    <h3><a href="design.html">Bracelets</a></h3>
+                    <span>The description of the item.</span>
+                  </div>
+                </li>
+
+
+                <li><img src="http://www.pngmart.com/files/1/Jewellery-Ring-PNG-Clipart.png" style="width: 180px"/>
+                  <div class="list-head">
+                    <h3><a href="design.html">Rings</a></h3>
+                    <span>The description of the item.</span>
+                  </div>
+                </li>
+
+
+                <li><img src="https://s-media-cache-ak0.pinimg.com/originals/c9/89/55/c98955bbb6331b4aa98cf33bdc84a84a.png" style="width: 180px"/>
+                  <div class="list-head">
+                    <h3><a href="design.html">Earrings</a></h3>
+                    <span>The description of the item.</span>
+                  </div>
+               </li>
+
+              </ul>
+
+            </div>
+          </div>
+        </section>
+
+        <section class="section card-wrapper">
+
+          <section class="card-one">
+          </section>
+
+          <section class="card-two">
+            <div class="card-title">
+              <h3>Designer Name</h3>
+              <p>Details about the product goes here.</p>
+              <a href="#home">View more</a>
+            </div>
+          </section>
+
+          <section class="card-three">
+             <div class="card-title">
+              <h3>Designer Name</h3>
+              <p>Details about the product goes here.</p>
+              <a href="#home">View more</a>
+            </div>
+          </section>
+
+          <section class="card-four">
+          </section>
+
+        </section>
+
+        <section class="section gallery cleafix">
+
+          <div class="container">
+              <div class="section-head">
+                  <h2>Designer Gallery</h2>
+                  <p>Explore Design</p>
+              </div>
+              <ul class="gallery-showcase">
+
+                <li>
+                  <figure>
+                    <img src="https://static.pexels.com/photos/265856/pexels-photo-265856.jpeg" alt=""/>
+                  </figure>
+                </li>
+
+                <li>
+                  <figure>
+                    <img src="https://static.pexels.com/photos/230290/pexels-photo-230290.jpeg" alt=""/>
+                  </figure>
+                </li>
+
+                <li>
+                  <figure>
+                    <img src="https://static.pexels.com/photos/248077/pexels-photo-248077.jpeg" alt=""/>
+                  </figure>
+                </li>
+
+              </ul>
+          </div>
+
+        </section>
+
+        <section class="section about" id="about">
+            <div class="section-head">
+                <h2>About Us</h2>
+                <p>Learn more about us and quality of our products</p>
+                
+                <section class="section about" id="about">
+                  <div class="section-head">
+                  </div>
+                  <div class="wrapper clearfix">
+                      <div class="left">
+                          <div class="image">
+                              <img src="https://th.bing.com/th/id/OIP.Yd0a021-ro1OpLfTU7ERfgHaHa?w=172&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Jewelry Store">
+                          </div>
+                      </div>
+                      <div class="right">
+                          <p>Welcome to <strong>Spark Jewels</strong>, your trusted destination for exquisite and timeless jewelry. Our collection features carefully crafted pieces made with the finest materials, ensuring elegance and sophistication in every design.</p>
+                          <p>Founded with passion, we strive to provide our customers with high-quality jewelry that tells a story. Whether you're looking for a classic piece or a modern statement, we have something for everyone.</p>
+                          <p>Thank you for choosing Elegant Jewels. We are committed to making your jewelry shopping experience extraordinary.</p>
+                      </div>
+                  </div>
+              </section>
+            </div>
+              <div class="wrapper clearfix">
+
+                <div class="left">
+                </div>       
+        </section>
+
+        <div class="contact" id="contact">
+          <div class="section-head">
+              <h2>Contact Us</h2>
+              <p>We’d love to hear from you! Reach out to us for any inquiries.</p>
+          </div>
+      
+          <div class="wrapper clearfix">
+              <div class="left">
+                  <h3>Our Address</h3>
+                  <p><strong>Elegant Jewels</strong></p>
+                  <p>123 Sparkle Street, Diamond City, IN 456789</p>
+                  <p>Email: contact@elegantjewels.com</p>
+                  <p>Phone: +91 98765 43210</p>
+                  <p>Opening Hours: Mon - Sat: 10 AM - 7 PM</p>
+              </div>
+              <div class="right">
+                  <h3>Send Us a Message</h3>
+                  <form>
+                      <div class="input-group">
+                          <label for="name">Name:</label>
+                          <input type="text" id="name" name="name" required>
+                      </div>
+                      <div class="input-group">
+                          <label for="email">Email:</label>
+                          <input type="email" id="email" name="email" required>
+                      </div>
+                      <label for="message">Message:</label>
+                      <textarea id="message" name="message" rows="4" required></textarea>
+                      
+                      <button type="submit">Send Message</button>
+                  </form>
+              </div>
+          </div>
+      </div>
+      
+       <div class="bottom-links">
+          <div class="container">
+            <ul>
+                <li><a href="#home">Support</a></li>
+                <li><a href="#home">FAQ</a></li>
+                <li><a href="#home">Designers</a></li>
+                <li><a href="#home">About</a></li>
+                <li><a href="#home">Contact</a></li>
+              </ul>
+          </div>
+        </div>
+
+        <footer>
+          <div class="container">
+            <small>© Spark jewelry</small>
+          </div>
+        </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
